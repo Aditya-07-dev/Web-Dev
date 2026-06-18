@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a dummy site for the implementation of CSS Box Model">
+    <title>CSS box model</title>
+    <style>
+        .box{
+            background-color:aqua;
+        }
+        .box1{
+            color:red;
+            padding: 10px;
+            margin: 25px;
+            border:4px solid turquoise;
+            height:200px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color:green;
+            padding: 10px;
+             margin: 25px;    /* here you would see margin collapse */
+            border:4px solid blue;
+            height:200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <img src="CSS-Box-Model.webp" width="350" height="300" alt="CSS Box-Model structure">
+    <div class="box box1">
+        <h1>This is box-1</h1>
+    </div>
+    <div class="box box2">
+        <h1>This is box-2</h1>
+    </div>
+</body>
+</html>

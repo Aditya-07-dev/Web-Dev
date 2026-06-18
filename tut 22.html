@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selectors</title>
+    <style>
+        .box:first-child {
+            color: yellow;
+        }
+
+        .box:nth-child(2):first-line {
+            color: red;
+        }
+
+        .boxes * {
+            border: 2px solid black;
+            margin: 3px;
+        }
+
+        [data-color="pink"] {
+            padding-top: 55px;
+        }
+
+        .box,
+        [data-color="pink"] {
+            background-color: skyblue;
+        }
+
+        .box:nth-child(even) {
+            background-color: antiquewhite;
+        }
+
+        .box:nth-last-child(1) {      /*mtlb neeche se pehla child*/
+            background-color: aquamarine;
+        }
+
+        .boxes:before {
+            content: "My name is Aditya";
+            margin: 3px;
+            background-color: bisque;
+            border: 2px solid black;
+            display: block;
+        }
+
+        .boxes:after {
+            content: "Aditya is so much in love with his kishu";
+            margin: 3px;
+            background-color: bisque;
+            border: 2px solid black;
+            display: block;
+        }
+
+        ::selection {
+            color: blanchedalmond;
+            background-color: crimson;
+        }
+
+        .box:first-letter {
+            color: gold;
+            font-size: 45px;
+        }
+
+        input::placeholder {
+            color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="pink" class="box">I am box1</div>
+        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus soluta dolor ducimus
+            incidunt omnis labore aliquam eos. Accusamus suscipit maiores reprehenderit expedita blanditiis saepe
+            architecto nam consequatur commodi quia optio aperiam, quidem nesciunt porro, repellendus sit quisquam
+            dolorum quos. Vel deleniti minima laboriosam sequi animi natus blanditiis fugit sunt hic quisquam
+            consequatur dolore quasi officia quas fuga saepe enim sapiente repellendus, accusantium recusandae. Vitae
+            itaque eaque commodi dolorem, adipisci porro laboriosam, unde at impedit velit delectus modi voluptatum.
+            Unde reiciendis maiores atque. Qui sint hic quibusdam quasi laudantium incidunt impedit eveniet et eligendi
+            animi nesciunt excepturi corrupti mollitia dolorum ex facere adipisci, quidem, blanditiis reprehenderit
+            soluta!</div>
+        <div class="box">I am box3</div>
+        <div class="box">I am box4</div>
+        <div class="box">I am box5</div>
+        <div class="box">I am box6</div>
+        <input type="text" placeholder="Enter your text here">
+    </div>
+</body>
+
+</html>

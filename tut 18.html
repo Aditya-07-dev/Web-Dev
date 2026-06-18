@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0; 
+        }
+        .box{
+            height:100px;
+            width:50vw;
+            border:2px solid black;
+            margin:3px;
+            padding:3px;
+        }
+        .box1{
+            background-color: aliceblue;
+            position:sticky;
+            top:0vh;
+            left:47vw;
+            z-index:2;
+        }
+        .box2{
+             background-color:azure;
+             position:relative;
+             top:45px;
+             left:25px;
+
+        }
+        .box3{
+             background-color:bisque;
+             position:relative;
+             z-index:1;
+        }
+        .box4{
+            background-color:beige;
+            position:fixed;
+            top:80vh;
+            right:47vw;
+        }
+        .box5{
+            background-color:burlywood;
+            position:absolute;   /*apne nearest positioned parent ke relatve apni position set arega yeh lagane ke baad*/
+            top:0px;
+            left:0px;
+           
+        }
+        .parent{
+            padding:25px;
+            margin:25px;
+            border:5px solid navajowhite;
+            height:100vh;
+            /* Exception: filter,transfrom and perspective properties can also make an element appear as positioned */
+        }
+        p{
+            border:2px solid black;
+            display:inline-block;
+            width:30vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1">This is Box 1</div>
+        <div class="box box2">This is Box 2</div>
+        <div class="box box3">This is Box 3</div>
+        <div class="box box4">This is Box 4</div>
+        <div class="box box5">This is Box 5</div>
+    </div>
+    <h1>Dummy text to add scroll to the page</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem doloribus praesentium officiis expedita ipsum facilis ab totam possimus voluptatum illo dolorum, voluptate maiores eaque nesciunt perferendis explicabo amet obcaecati cumque. Dolore architecto beatae explicabo expedita? Odit repellendus deserunt natus itaque praesentium provident ex nihil aliquam culpa soluta necessitatibus iusto animi cum aut amet voluptate, numquam corrupti tempore. Quam perferendis illo accusantium sapiente ab, ex aspernatur odit officia a repudiandae quisquam dolor at dolores vitae incidunt mollitia culpa, reprehenderit, eveniet velit. Aliquam eos non laboriosam reprehenderit quia, fugiat alias rem labore ipsam illum consequuntur sunt aperiam facere quasi voluptatibus! Illo ipsa perferendis, eius quibusdam dicta laborum tenetur. Labore pariatur, magni repellat repellendus eos neque soluta nihil sit sed eligendi provident animi voluptate! Incidunt dolore, sit numquam officiis, mollitia ea animi quidem consequuntur cupiditate ullam, nihil fuga laborum! Officiis perspiciatis qui facere ullam maxime assumenda, iure magnam molestias. Necessitatibus suscipit sapiente, illo praesentium aspernatur dolores sed, cumque nam neque eaque enim rerum. Eius numquam ipsam cum sint recusandae itaque quod, in libero earum quam eum quae placeat voluptate provident enim laborum asperiores reiciendis sit, consectetur tempore tempora. Id inventore unde incidunt maxime quas omnis, corporis voluptates illo non molestias consectetur debitis eaque quidem voluptatum minima cupiditate ex magnam doloremque quo consequuntur fugit rerum. Ducimus assumenda voluptatem minima doloremque maiores similique fugit facere corporis quis delectus voluptate, eaque nam? At aspernatur ipsam eos officiis eaque reiciendis. Dolor, at esse velit incidunt iure sed dignissimos earum fugit inventore, aspernatur obcaecati dolores illum veniam nulla veritatis itaque? At, eum minima sit quae aliquam itaque ex! Nihil harum id consectetur illum, omnis beatae eos vero quis distinctio quisquam quia eius vitae quidem similique corporis numquam aliquid nemo esse neque ut expedita, dolore totam maxime maiores! Illo aliquid error ab, at unde fuga nesciunt cupiditate saepe doloribus quidem consectetur autem voluptatibus quos velit, ut nam explicabo corrupti inventore labore! Et assumenda, adipisci architecto rerum vel aspernatur eligendi sint doloremque sunt exercitationem commodi ex molestias aliquid consequatur, voluptate sed odit autem corporis iure perferendis, nostrum reiciendis nam natus error. Mollitia error esse, quibusdam dolor nihil, iure a modi odit ad sequi deserunt minus incidunt eos. Quisquam labore perferendis quam accusantium consectetur deleniti itaque ut error vero ea officiis dolorem doloribus fugit recusandae vel dolores excepturi, dolor debitis totam reprehenderit nihil maxime? Molestiae explicabo sapiente illum, at quasi quis iure quaerat asperiores pariatur aliquam molestias exercitationem tempore fuga placeat accusamus ipsa vitae impedit delectus, ducimus enim sequi tempora aperiam nisi aspernatur. Temporibus id magni quae totam minus blanditiis modi aperiam vero tempore inventore explicabo labore beatae nihil recusandae laudantium voluptatibus similique, quibusdam sapiente atque commodi sunt. Asperiores distinctio hic aperiam expedita eveniet maiores quos. Quisquam quibusdam facilis tempora quidem quod ad, at officia, nihil, fugit veniam perferendis culpa laudantium fuga delectus excepturi. Quos sapiente molestias vel dolores quas sunt labore similique praesentium in blanditiis at numquam assumenda amet quae voluptatum error quaerat vitae adipisci, dignissimos commodi placeat? Sapiente non omnis quidem itaque ratione deleniti modi vel eligendi qui fugit.</p>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta meta="description" content="This is a dummy site for implementing CSS selectors">
+    <title>CSS selectors</title>
+    <style>
+        /* Element selector */
+        div{
+            background-color:red;
+        }
+        /* Class selector */
+        .kishu{
+            background-color:pink;
+        }
+        /* Id selector */
+        #chindi{
+            color:skyblue;
+        }
+        /* Child selector */
+        div > h4{
+            background-color:aqua;
+        }
+        /* descendent selector */
+        div p{
+            background-color:plum;
+        }
+        /* Universal selector */
+        *{
+            margin:0;
+            padding:0;
+        }
+        /* Pseudo selector */
+        a:visited{
+            color:green;
+        }
+        a:link{
+            color:purple;
+        }
+        a:hover{
+            background-color:thistle;
+        }
+        a:active{
+            color:blueviolet;
+        }
+        p:nth-child(2){
+            background-color:antiquewhite;
+            color:burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This is Aditya on this side
+    </div>
+
+    <div class="kishu" id="chindi">
+        Meri kishu bahut pyaari hai
+    </div>
+
+    <div>
+        <h4>Mai sher hun</h4>
+    </div>
+
+    <div>
+        <article>
+            <p>Aur meri kishu sherni</p>
+        </article>
+    </div>
+
+    <main>
+        <a href="https://www.google.com">Go to Google</a>
+        <a href="https://www.youtube.com">Go to Youtube</a>
+    </main>
+
+    <article>
+        <p>She's mine</p>
+        <p>I'm hers</p>
+    </article>
+    
+</body>
+</html>

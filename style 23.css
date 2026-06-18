@@ -1,0 +1,144 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ .box1 {
+     border: 2px solid red;
+     display: flex;
+     height: 80vh;
+     justify-content: center;
+     /* 5 values aur hoti hain:
+            1- flex-start- box ke beggining me set ho jayega main axis ke along.
+            2- flex-end- box ke end me set ho jayega main axis ke along.
+            3- space-evenly- sare items ke beech me even spaces aa jaayenge including 1st item aur parent border and last item and parent border along the main axis.
+            4- space-around- sare items ke beech equal spaces aa jayengi and 1st & last element aur parent border along the main axis ke beech me bhi same spaces aa jaayengi but woh space consequetive items ke beech ke space k equal ni hongi.
+            5- space-between- sare items ke beech equal spaces aa jayengi and 1st & last element aur parent border along the main axis ke beech me koi space ni hoga.*/
+     align-items: center;
+     /* kaii sari values hoti hain jaise flex-start,flex-end jisme box ke beggining and end me set ho jayenge elements cross axis ke along. and ek imp. value hoti hai-
+            1- baseline- agr saare items idhr udhr bikhre hue hain inside the parent toh unn sbke centre same ho jaayenge and woh sb ek hi line me aa jaayenge.*/
+ }
+
+ .boxes1 {
+     width: 45px;
+     height: 45px;
+     margin: 4px;
+     border: 2px solid mediumseagreen;
+     background-color: mediumvioletred;
+
+ }
+
+ .box2 {
+     margin-top: 5px;
+     border: 2px solid red;
+     display: flex;
+     height: 80vh;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column-reverse;
+     /*3 values aur hoti hain- 
+            1- column: mtlb seedhe column me. 
+            2- row: mtlb seedhe row me. 
+            3- row-reverse: mtlb row me hi but opposite direction me.*/
+ }
+
+ .boxes2 {
+     width: 45px;
+     height: 45px;
+     margin: 4px;
+     border: 2px solid mediumseagreen;
+     background-color: mediumvioletred;
+
+ }
+
+ .box3 {
+     margin-top: 5px;
+     border: 2px solid red;
+     display: flex;
+     height: 80vh;
+     flex-direction: row;
+     flex-wrap: wrap-reverse;
+     align-content: center;
+     /* tb use krte hain jb flex-wrap laga hua ho and yeh poore content ko cross axis ke center me kr dega (ya start or end depending on the value). */
+ }
+
+ .boxes3 {
+     width: 45px;
+     height: 45px;
+     margin: 4px;
+     border: 2px solid mediumseagreen;
+     background-color: mediumvioletred;
+ }
+
+ .box4 {
+     margin-top: 5px;
+     border: 2px solid red;
+     display: flex;
+     height: 80vh;
+     flex-flow: column wrap;
+     /* short end to write flex-direction and flex-wrap. */
+     align-content: center;
+     /* column-gap:15px; */
+     /* row-gap:15px; */
+     /* gap: 10px 15px; */
+     /* short hand for row and column gap sath me dene k liye isi order me. */
+     gap: 15px;
+     /* columns and rows dono ke beech equal gap dene k liye. */
+ }
+
+ .boxes4 {
+     width: 45px;
+     height: 45px;
+     border: 2px solid mediumseagreen;
+     background-color: mediumvioletred;
+ }
+
+ .Ordr1 {
+     order: 4;
+ }
+
+ .Ordr2 {
+     order: 7;
+ }
+
+ .Ordr3 {
+     order: 2;
+ }
+
+ .Ordr4 {
+     order: 8;
+     /* jiska order zyada woh end me lay hoga. agr do item k order same doge toh jo starting structure me aage hoga woh aage aa jaayega aur jo baad me hoga woh baad me */
+ }
+
+ .box5 {
+     margin-top: 5px;
+     border: 2px solid red;
+     display: flex;
+     height: 80vh;
+     flex-direction: row;
+     align-items: center;
+ }
+
+ .boxes5 {
+     width: 45px;
+     height: 45px;
+     margin: 4px;
+     flex-grow: 1;
+     border: 2px solid mediumseagreen;
+     background-color: mediumvioletred;
+ }
+
+ .itm14 {
+     flex-grow: 3;
+     /*saare boxes ki flex-grow 1 hai aur iski 3 mtlb yeh ek individual boxe ki 3x width cover karega.*/
+ }
+
+ .itm1 {
+     flex-shrink: 2;
+     /* jb screen width decrease hogi toh yeh item baaki items ke mukable 2x speed se shrink hoga. */
+ }
+
+ .itm7 {
+     align-self: flex-end;
+     /* isse kisi particular element ki position set hoti hai cross-axis ke along. */
+ }

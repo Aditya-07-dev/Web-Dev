@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            display: inline-block;
+            margin: 10px 25px;
+            height: 30vh;
+            width: 30vh;
+            border: 2px solid navy;
+            overflow: auto; /*iski value hidden,scroll,clip and visible bhi de skte hain */
+        }
+
+        .box2 {
+            display: inline-block;
+            margin: 10px 25px;
+            height: 30vh;
+            width: 30vh;
+            border: 2px solid navy;
+            overflow: auto;
+            white-space: nowrap;
+            text-overflow:ellipsis;
+        }
+        .box3 {
+            display: inline-block;
+            margin: 10px 25px;
+            height: 30vh;
+            width: 30vh;
+            border: 2px solid navy;
+            overflow-x:hidden;
+            overflow-y:scroll;
+            /* overflow: hidden scroll;  -aise bhi de skte hain shorthand me x and y axis ko ek sath */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium cumque numquam totam, ad possimus
+        libero dolore delectus error quam facilis adipisci perspiciatis molestias natus voluptates impedit id
+        consequuntur vitae, nulla in. Assumenda possimus delectus amet sint fuga accusantium reprehenderit est explicabo
+        unde atque! Est quam corrupti id ipsum quas ullam corporis totam iusto rerum voluptatum sit, repudiandae
+        repellendus incidunt?
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium cumque numquam totam, ad possimus
+        libero dolore delectus error quam facilis adipisci perspiciatis molestias natus voluptates impedit id
+        consequuntur vitae, nulla in. Assumenda possimus delectus amet sint fuga accusantium reprehenderit est explicabo
+        unde atque! Est quam corrupti id ipsum quas ullam corporis totam iusto rerum voluptatum sit, repudiandae
+        repellendus incidunt?
+    </div>
+    <div class="box3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium cumque numquam totam, ad possimus
+        libero dolore delectus error quam facilis adipisci perspiciatis molestias natus voluptates impedit id
+        consequuntur vitae, nulla in. Assumenda possimus delectus amet sint fuga accusantium reprehenderit est explicabo
+        unde atque! Est quam corrupti id ipsum quas ullam corporis totam iusto rerum voluptatum sit, repudiandae
+        repellendus incidunt?
+    </div>
+</body>
+
+</html>

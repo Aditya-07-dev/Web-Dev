@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* ****************************************grid-item starts here**************************************** */
+        .container {
+            height: 50vh;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: [lineV1]120px [lineV2]60px [lineV3];
+            grid-template-rows: [lineH1]60px [lineH2]60px [lineH3]60px;
+        }
+
+        .item {
+            width: 30px;
+            height: 30px;
+            border: 2px solid black;
+        }
+
+        .itm1 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            /* grid-row:1/2;  short-end for the above...column me bhi oopar wale ki trh de skte hain. */
+            grid-column: 1/2;
+        }
+
+        .itm4 {
+            grid-column: lineV1/3;
+            grid-row: lineH1/lineH2;
+            width: unset;
+        }
+
+        /* *****************************************grid-area starts here***************************************** */
+        .Pbox {
+            margin-top: 4px;
+            height: 50vh;
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                "side article space"
+                "footer footer footer";
+        }
+
+        .Cbox {
+            border: 2px solid black;
+        }
+
+        .b1 {
+            grid-area: nav;
+            background-color: beige;
+        }
+
+        .b2 {
+            grid-area: side;
+            background-color: bisque;
+        }
+
+        .b3 {
+            grid-area: article;
+            background-color: cornsilk;
+        }
+
+        .b4 {
+            grid-area: space;
+            background-color: aliceblue;
+        }
+
+        .b5 {
+            grid-area: footer;
+            background-color: azure;
+        }
+
+        /* ********************************************fr unit starts here******************************************** */
+        .parent {
+            margin-top: 4px;
+            height: 50vh;
+            width: 80vw;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            row-gap: 10px;
+            column-gap: 5px;
+            /* gap:5px;  column and row gap ek sath dene ke liye short-end. */
+        }
+
+        .child {
+            border: 2px solid black;
+        }
+
+        .father {
+            margin-top: 4px;
+            height: 80vh;
+            width: 80vw;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 300px 400px 300px;
+            row-gap: 10px;
+            column-gap: 5px;
+            align-items: center;
+            justify-items: center;
+            /*apne-apne individual cell me align and justify honge items. Aur agr poori grid ko hi parent me align ya justify krna hai toh justify-content ya align-content use karenge. */
+            /* place-content:center; yeh krne se justify-content aqnd align-content dono ki value ek sath de skte hain. */
+        }
+
+        .son {
+            border: 2px solid black;
+            width: 50px;
+            height: 50px;
+        }
+
+        .s2 {
+            align-self: start;
+            justify-self:end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item itm1">1</div>
+        <div class="item itm2">2</div>
+        <div class="item itm3">3</div>
+        <div class="item itm4">4</div>
+        <div class="item itm5">5</div>
+    </div>
+    <div class="Pbox">
+        <div class="Cbox b1">1</div>
+        <div class="Cbox b2">2</div>
+        <div class="Cbox b3">3</div>
+        <div class="Cbox b4">4</div>
+        <div class="Cbox b5">5</div>
+    </div>
+    <div class="parent">
+        <div class="child c1">1</div>
+        <div class="child c2">2</div>
+        <div class="child c3">3</div>
+        <div class="child c4">4</div>
+        <div class="child c5">5</div>
+    </div>
+    <div class="father">
+        <div class="son s1">1</div>
+        <div class="son s2">2</div>
+        <div class="son s3">3</div>
+        <div class="son s4">4</div>
+        <div class="son s5">5</div>
+    </div>
+</body>
+
+</html>

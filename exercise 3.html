@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        nav {
+            background-color: white;
+            height: 60px;
+            display: flex;
+            padding: 10px;
+            align-items: center;
+        }
+        .logo img {
+            height: 62px;
+            width: 62 px;
+            position:absolute;
+            top:10px;
+        }
+        .sublogo img {
+            height: 15px;
+            width:100px;
+            margin-top:35px;
+            position:relative;
+            left:130px;
+            top:10px;
+        }
+        .logo img {
+            height: 62px;
+            width: 62 px;
+        }
+
+        .middle ul {
+            display: flex;
+            margin-left:250px;
+            gap: 20px;
+        }
+
+        .middle li {
+            display:flex;
+            justify-content:center;
+            gap:5px;
+            list-style: none;
+            font-size: 23px;
+        }
+        .middle li:hover{
+            color:grey;
+            cursor:pointer;    
+        }
+        .middle li svg:hover{
+            color:grey;
+        }
+        .right{
+            display:flex;
+            align-items:center;
+        }
+        .button{
+        color:black;
+        border:2px solid black;
+        text-decoration:none;
+        padding:10px 20px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:18px;
+        border-radius:3px;
+        }
+        .button:hover{
+            color:grey;
+        }
+        .right ul{
+            display:flex;
+            list-style: none;
+            margin-left:120px;
+            position:absolute;  
+            gap:30px;
+        }
+        .lang{
+             text-decoration:none;
+             color:black;
+             font-size:20px;
+             position:relative;
+             bottom:5px;
+             left:5px;
+        }
+        .right li:nth-of-type(2):hover a{
+            color:grey;
+        }
+        .right li:hover svg{
+            color:grey;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Background-2.png" alt="The Logo">
+        </div>
+        <div class="sublogo">
+            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Layer-1-1.png" alt="lower logo">
+        </div>
+        <div class="middle">
+            <ul>
+                <li><span>Products</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></li>
+                <li><span>Pricing</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></li>
+                <li><span>Resources</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></li>
+                <li><span>Our Company</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="https://google.com" class="button">BUY NOW</a></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"color="#000000" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" /><path d="M8 12C8 18 12 22 12 22C12 22 16 18 16 12C16 6 12 2 12 2C12 2 8 6 8 12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" /><path d="M21 15H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"stroke-linejoin="round" /><path d="M21 9H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><a href="https://google.com" class="lang">English </a></li>
+                <li><a href="https://google.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none"><path d="M17 17L21 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>

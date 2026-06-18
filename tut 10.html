@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is a dummy site for the implementation of CSS fonts and texts">
+    <title>Fonts & text</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        /* can also add this using link tags in the head tag */
+
+        #head1 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            text-transform: capitalize;  /*uppercase and lowercase can also be done*/
+            text-decoration: underline;
+            text-decoration-color: mediumslateblue;
+            text-decoration-style:wavy;
+            text-decoration-thickness:6px;
+            text-indent:40px;
+            
+        }
+
+        #par1 {
+            font-family: "Ballet", cursive;
+            font-size: 30px;
+            line-height: 3;
+            letter-spacing: 15px;
+        }
+
+        .par2{
+            border:2px solid black;
+            width: 70px;
+            text-overflow:ellipsis;
+            overflow:hidden;
+            word-break: break-all;
+        }
+
+        h2{
+            text-align:center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="head1">fonts</h1>
+    <p id="par1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dignissimos!</p>
+    <p class="par2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil optio illo maxime rerum molestiae quod ex obcaecati molestias adipisci placeat!</p>
+    <h2>End Of Fonts</h2>
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+        }
+        html{
+            font-size:12px;
+        }
+        .nvbr {
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: aqua;
+            width: 50vw;   /*only works when the element is a block element*/
+            height:10vh;
+            margin: auto;  /*only works when the element is a block element*/  
+        }
+        .nvbr p{
+            font-size:2rem;
+        }
+        .cont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: aqua;
+            width: 100vw; 
+            height:40vh;  
+            margin: 25px auto;
+            font-size:15px;  
+        }
+        .cont p{
+            font-size:2em;
+        }
+        .kishu{
+            box-sizing: border-box;
+            font-size:25px;
+            border:2px solid rgb(95, 4, 95);
+            background-color:violet;
+            width:100vmin;
+        }
+        .lorem{
+            box-sizing: border-box;
+            margin:25px auto;
+            font-size:25px;
+            border:2px solid navy;
+            background-color:skyblue;
+            min-height:50vh;   /*can give min-width similarly*/
+        }
+        .ipsum{
+            box-sizing: border-box;
+            margin:25px auto;
+            font-size:25px;
+            border:2px solid goldenrod;
+            background-color:silver;
+            width:100vw;
+        }
+        .ipsum p{
+            width:50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nvbr">
+        <p>
+            This is a Navigation Bar
+        </p>
+    </div>
+    <div class="cont">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, unde similique ipsum sint corporis, officiis culpa enim ab sit libero aperiam impedit iste animi facere ducimus ex nostrum quae harum? Error excepturi vero nisi obcaecati voluptas laboriosam molestiae eligendi consectetur hic quibusdam, reiciendis voluptates rem voluptatum placeat nam alias temporibus nihil iusto, fugiat praesentium ex dignissimos?
+        </p>
+    </div>
+    <div class="kishu">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae magni eligendi nemo voluptatibus quae soluta modi magnam debitis doloribus quod.
+    </div>
+    <div class="lorem">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae magni eligendi nemo voluptatibus quae soluta modi magnam debitis doloribus quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur nemo in aut molestias, at labore ipsa, a quod ut architecto officia nulla? Consequuntur perferendis, delectus repellat earum incidunt, voluptatem vero sit voluptates, dolore recusandae modi quia natus quod qui rem odit tempore reiciendis? Quia reiciendis voluptatum fugit eligendi earum eaque nisi eius expedita quidem repellendus ipsam asperiores illo amet blanditiis mollitia, illum assumenda nulla tenetur cumque odit non sapiente autem! Beatae esse consectetur tenetur, perferendis unde cupiditate similique, fugit rerum distinctio aut debitis corrupti id voluptas accusantium non inventore? In enim facere a modi natus blanditiis dolore repellendus ad, neque sunt tempore voluptatum corporis molestiae ut temporibus laboriosam ab reiciendis debitis iste vel voluptatibus quaerat laudantium eaque! Maiores eum sapiente rem veniam, incidunt perferendis consectetur. Maiores sit, expedita quis repudiandae dolorum ipsam pariatur est cumque placeat a illum voluptate eaque fuga non vel harum commodi quia molestiae vero consequatur illo in perferendis explicabo? Pariatur, quasi quos? Harum minus aliquam doloribus. Expedita autem omnis numquam dignissimos aliquid molestias cum maxime suscipit amet, odio placeat velit perspiciatis labore, dolorem quisquam rerum accusantium ullam porro sapiente non sunt. Adipisci quo, aspernatur labore vero ipsa facilis rem maiores iure eligendi mollitia libero animi nisi dolorem praesentium porro, alias temporibus sed sint molestiae? Unde ratione sit est, a error ex ipsa tenetur ipsam cupiditate, deserunt reiciendis architecto officiis, iste magnam odit facilis praesentium expedita! Quae illum tempora similique vitae veritatis necessitatibus! Quod, voluptatibus incidunt. Molestiae possimus a earum alias, non odio, asperiores, nulla accusantium ut repudiandae eum veniam ullam voluptas sit? Sit unde nisi, eligendi perferendis autem quas aut tempora? Pariatur alias et sit voluptas, perferendis voluptatibus exercitationem ratione. Cum dignissimos est mollitia nam dolorum doloremque aliquam sed perspiciatis. Sint soluta velit excepturi, autem consequuntur exercitationem blanditiis assumenda aspernatur consequatur, cum deleniti facilis eos eius.
+        </p>
+    </div>
+    <div class="ipsum">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit asperiores qui, eaque error placeat illo, rem facere impedit non excepturi facilis neque deserunt autem minus beatae distinctio et amet. Aperiam, ad quo pariatur laboriosam veritatis iste ab harum, voluptates exercitationem corporis natus. Quos placeat minima facilis dolor accusantium libero aliquam?
+        </p>
+    </div>
+
+</body>
+
+</html>

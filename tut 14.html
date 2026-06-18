@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display properties</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            border: 2px solid navy;
+            display:inline-block;
+            padding: 25px;
+            margin: 25px;
+            width:250px;
+        }
+        .none{
+            border: 2px solid navy;
+            padding: 25px;
+            margin: 25px;
+            display:none;
+        }
+        .invsbl{
+            border: 2px solid navy;
+            padding: 25px;
+            margin: 25px;
+            visibility:hidden;
+        }
+        span{
+            border: 2px solid navy;
+            padding: 25px;
+            margin: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is box1
+    </div>
+    <div class="box">
+        This is box2
+    </div>
+    <div class="none">
+        This is box1
+    </div>
+    <div class="invsbl">
+        This is box2
+    </div>
+    <span>
+        This is inline element
+    </span>
+    
+</body>
+</html>
