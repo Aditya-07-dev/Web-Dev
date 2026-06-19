@@ -14,17 +14,45 @@
             background-color:rgb(128, 241, 241);
             height:4vh;
             width:5vw;
+            /* animation-name:Animation1;
+            animation-duration:3s;
+            animation-iteration-count:3;
+            animation-timing-function: cubic-bezier(1, 0, 0, 0.99);
+            animation-delay: 3s;
+            animation-direction: reverse;
+            animation-fill-mode: backwards;
+            animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;  -shorthand for animation*/
+            animation: Animation1 3s cubic-bezier(1, 0, 0, 0.99) 2s 1 forwards,
+                       Animation2 3s cubic-bezier(1, 0, 0, 0.99) 2s 1 backwards;
         }
-        .box{
-            transform: translateX(100px) translateY(100px);
-        }
-        @keyframes Animation1{
-             from{
 
+        @keyframes Animation1{
+            0%{
+                transform:rotate(0deg);
             }
-            to{
-                
+            25%{
+                transform:rotate(90deg);
             }
+            50%{
+                transform:rotate(180deg);
+            }
+            75%{
+                transform:rotate(270deg);
+            }
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+        @keyframes Animation2{
+            from{
+               background-color: rgb(232, 255, 20);
+           }
+           to{
+               transform: translateX(500px) translateY(50px);
+               background-color:rgb(255, 0, 0);
+           }
+            
         }
        
     </style>
